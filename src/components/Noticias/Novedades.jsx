@@ -1,6 +1,6 @@
 import React from "react";
 import ItemsNoticias from "./ItemsNoticias";
-import dataNovedades from "../data/Novedades.json"
+import dataNovedades from "../../data/Novedades.json"
 
 
 

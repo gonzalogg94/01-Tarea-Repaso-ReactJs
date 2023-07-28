@@ -1,7 +1,7 @@
 import React from "react";
 import MenuItems from "./MenuItems";
 import Buscador from "./Buscador";
-import dataMenu from "../data/Menu.json"
+import dataMenu from "../../data/Menu.json"
 
 const NavbarMenu = () => {
   return (

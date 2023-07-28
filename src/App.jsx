@@ -1,14 +1,14 @@
 import "./styles/index.css";
 import "./styles/features.css";
-import NavbarMenu from "./components/NavbarMenu";
-import BannerPrincipal from "./components/BannerPrincipal";
-import Novedades from "./components/Novedades";
+import Novedades from "./components/Noticias/Novedades";
+import NavbarMenu from "./components/navbar/NavbarMenu";
+import BannerPrincipal from "./components/Banner/BannerPrincipal";
 
 const App = () => {
   return (
     <>
-     <NavbarMenu></NavbarMenu>
-      <BannerPrincipal></BannerPrincipal>
+ <NavbarMenu></NavbarMenu>
+    <BannerPrincipal></BannerPrincipal>
       <Novedades></Novedades>
     </>
   );
