@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import CallToAction from "../../data/CallToAction.json";
 
 const BannerCallToAction = () => {
-  const [banner, setBanner] = useState({});
+  const [banner, setBanner] = useState( CallToAction[0]);
 
   const bannerFuncion = () => {
     const indexAleatorio = Math.floor(Math.random() * CallToAction.length);
@@ -11,13 +11,11 @@ const BannerCallToAction = () => {
   };
 
   useEffect(() => {
-    bannerFuncion();
     const intervalo = setInterval(() => {
       bannerFuncion();
-    }, 3000);
+    }, 2000);
 
-    // return () => clearInterval(intervalo); !!!! CONSULTAR!!!!!
-
+    return () => clearInterval(intervalo);
   }, [CallToAction.length]);
 
   return (
