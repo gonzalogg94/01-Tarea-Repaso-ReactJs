@@ -14,7 +14,7 @@ const BannerCallToAction = () => {
     bannerFuncion();
     const intervalo = setInterval(() => {
       bannerFuncion();
-    }, 4000);
+    }, 3000);
 
     // return () => clearInterval(intervalo); !!!! CONSULTAR!!!!!
 
