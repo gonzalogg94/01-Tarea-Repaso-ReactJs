@@ -9,6 +9,7 @@ const Novedades = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
   return (
     <>
       <div className="container px-4 py-5" id="featured-3">
