@@ -9,7 +9,6 @@ const Novedades = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
   return (
     <>
       <div className="container px-4 py-5" id="featured-3">
@@ -19,7 +18,6 @@ const Novedades = () => {
           handleShow={handleShow}
         ></ItemsNoticias>
         <ModalNovedades
-          handleShow={handleShow}
           handleClose={handleClose}
           show={show}
         ></ModalNovedades>

@@ -2,33 +2,26 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-const ModalNovedades = ({ handleShow, handleClose, show }) => {
+const ModalNovedades = ({ handleClose, show }) => {
   return (
     <>
       <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Titulo del curso</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>inscribite ahora !!!</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-          </Form>
+      <Modal.Body>
+          <div className="container">
+            <div className="row mt-3">
+              <h5 className="text-center">Ingresar el titulo</h5>
+              <p className="text-center">Inscribte ahora!!!</p>
+            </div>
+            <div className="row">
+              <Form>
+                <Form.Control type="text" autoFocus />
+              </Form>
+              <div className="container text-center p-3">
+                <Button size="sm">MAS INFORMACION</Button>
+              </div>
+            </div>
+          </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );
