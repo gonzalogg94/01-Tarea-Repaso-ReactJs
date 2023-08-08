@@ -17,10 +17,7 @@ const Novedades = () => {
           dataNovedades={dataNovedades}
           handleShow={handleShow}
         ></ItemsNoticias>
-        <ModalNovedades
-          handleClose={handleClose}
-          show={show}
-        ></ModalNovedades>
+        <ModalNovedades handleClose={handleClose} show={show}></ModalNovedades>
       </div>
     </>
   );
